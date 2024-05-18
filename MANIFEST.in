@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include diamond_customapp *.css
+recursive-include diamond_customapp *.csv
+recursive-include diamond_customapp *.html
+recursive-include diamond_customapp *.ico
+recursive-include diamond_customapp *.js
+recursive-include diamond_customapp *.json
+recursive-include diamond_customapp *.md
+recursive-include diamond_customapp *.png
+recursive-include diamond_customapp *.py
+recursive-include diamond_customapp *.svg
+recursive-include diamond_customapp *.txt
+recursive-exclude diamond_customapp *.pyc

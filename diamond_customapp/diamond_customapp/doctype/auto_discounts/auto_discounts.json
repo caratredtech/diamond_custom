@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-07-01 17:12:54.723936",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entry_type_and_date",
+  "naming_series",
+  "posting_date",
+  "customer",
+  "payment_entry_reference",
+  "discount_amount",
+  "discount_applied",
+  "sales_invoice_number",
+  "sales_invoice_against",
+  "amended_from",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "entry_type_and_date",
+   "fieldtype": "Section Break",
+   "options": "fa fa-flag"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "no_copy": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "payment_entry_reference",
+   "fieldtype": "Data",
+   "label": "Payment Entry Reference"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Float",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "discount_applied",
+   "fieldtype": "Select",
+   "label": "Discount Applied",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "sales_invoice_number",
+   "fieldtype": "Data",
+   "label": "From Sales Invoice"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "sales_invoice_against",
+   "fieldtype": "Data",
+   "label": "Discount Invoice Reference"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Auto Discounts",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_on",
+   "fieldtype": "Date",
+   "label": "Created On"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-11 15:13:46.762281",
+ "modified_by": "Administrator",
+ "module": "Diamond Customapp",
+ "name": "Auto Discounts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
